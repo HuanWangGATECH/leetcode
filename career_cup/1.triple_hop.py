@@ -1,5 +1,6 @@
 
 # a child is running up staircase with n steps and can hop 1 step 2 step or 3 steps at a time. Implement a method to count how many possible ways the child can run up stairs
+# leetcode 70 . climbing stairs 
 
 def triple_hop(x):
     if x < 0:
