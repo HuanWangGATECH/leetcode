@@ -37,3 +37,25 @@ class Solution:
         return True 
         
         
+# others solution that is smart 
+
+
+class Solution:
+    def findWords(self, words):
+        first_row = set(list('qwertyuiop'))
+        second_row = set(list('asdfghjkl'))
+        third_row = set(list('zxcvbnm'))
+        word_list = []
+        for word in words:
+            res = 0
+
+            word_set = set(list(word.lower()))
+            if word_set.intersection(first_row) == word_set:
+                res+=1
+            if word_set.intersection(second_row) == word_set:
+                res+=1
+            if word_set.intersection(third_row) == word_set:
+                res+=1
+            if res:
+                word_list.append(word)
+        return word_list
