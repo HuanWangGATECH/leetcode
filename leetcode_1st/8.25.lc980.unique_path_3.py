@@ -60,3 +60,52 @@ class Solution:
         dfs(grid,self.start[0],self.start[1])
                     
         return self.count
+
+    
+    
+    class Solution:
+    def uniquePathsIII(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        numObstacles = 0
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    start = (i, j)
+                elif grid[i][j] == 2:
+                    end = (i, j)
+                elif grid[i][j] == -1:
+                    numObstacles += 1
+        
+        def findNeighbors(node):
+            x, y = node
+            temp = [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]
+            actual = []
+            for each in temp:
+                ex, ey = each
+                if ex < 0 or ey < 0 or ex > m - 1 or ey > n - 1 or grid[ex][ey] == -1:
+                    continue
+                else:
+                    actual.append(each)
+                    
+            return actual
+        
+        visited = set()
+        self.cnt = 0
+        
+        def func(node):
+            if node == end:
+                #print(len(visited))
+                if len(visited) == m * n - numObstacles:
+                    self.cnt += 1
+                return
+            
+            for neighbor in findNeighbors(node):
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    func(neighbor)
+                    visited.remove(neighbor)
+        
+        visited.add(start)
+        func(start)
+        #print(numObstacles)
+        return self.cnt
