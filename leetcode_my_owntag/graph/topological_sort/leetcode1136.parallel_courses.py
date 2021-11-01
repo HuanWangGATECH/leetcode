@@ -1,5 +1,5 @@
 ##1136. Parallel Courses
-
+## my BFS solution 
 class Solution:
     def minimumSemesters(self, n: int, relations: List[List[int]]) -> int:
         
