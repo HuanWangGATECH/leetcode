@@ -52,35 +52,53 @@ class Solution:
      ### DFS solution still need some time  
     
     
-    def minimumSemesters(self, N, relations):
-    """
-    :type N: int
-    :type relations: List[List[int]]
-    :rtype: int
-    """
-    n = N        
-    d = collections.defaultdict(list)
-    visited = [0 for _ in range(n + 1)]
-    depth = [1 for _ in range(n + 1)]
-    for x, y in relations:
-        d[y].append(x)
-    for i in range(1, n + 1):
-        if not self.dfs(i, d, visited, depth, 1):
-            return -1
-    return max(depth)
-
-def dfs(self, i, d, visited, depth, cnt):
-    if visited[i] == 1:
-        return False
-    if visited[i] == 2:
-        return True
-    visited[i] = 1
-    for j in d[i]:
-        depth[i] = max(depth[i], depth[j] + 1)
-        if not self.dfs(j, d, visited, depth, cnt):
-            return False
-    visited[i] = 2
-    return True
-
-
-
+class Solution:
+    def minimumSemesters(self, n: int, relations: List[List[int]]) -> int:
+        
+       
+        
+        # build a graph 
+        graph={}
+        visited={}
+        depth={}
+        
+        for i in range(1,n+1):
+            graph[i]=[]
+            visited[i]=False
+          
+            
+        for relation in relations:
+            prevCourse=relation[0]
+            nextCourse=relation[1]
+            graph[prevCourse].append(nextCourse) 
+            
+          
+        
+        for i in range(1,n+1):
+            #print (i,self.dfs(i,graph,visited))
+            if self.dfs(i,graph,visited):
+                return -1
+         
+        return False 
+        #print (sortedOrder)
+                
+    def dfs(self,u,graph,visited):
+       ## there are two kinds of visited nodes 
+     #1, visited but its's still being processed in the dfs process, therefore upstream to the current 
+     #2, visited and all lower level dfs processed 
+     # if exploring encounter #1 nodes, there is a cycle 
+     # if exploring encounter # 2 nodes, no cycle 
+        
+        print (visited,graph)
+        # return True if cycle detected 
+        if visited[u]==1:
+            return True 
+        if visited[u]==2:
+            return False 
+        visited[u]=1
+        for v in graph[u]:
+            if self.dfs(v,graph,visited):
+                return True 
+                
+        visited[u]=2 
+        return False 
