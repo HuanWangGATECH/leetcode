@@ -1,3 +1,5 @@
+![GitHub Logo](/images/logo.png)
+
 from collections import deque
 class Solution:
     def loudAndRich(self, richer: List[List[int]], quiet: List[int]) -> List[int]:
