@@ -7,7 +7,7 @@
 ## Bellman ford O(nm)
 ## Floyd-Warshall O(n^2m)
 
-![Dijkstra's(https://github.com/HuanWangGATECH/leetcode/blob/6447986475a29e0c6cbddf70ca1d2fdaf2713fb7/leetcode_my_owntag/graph/shortest_path/Graph_Dijkstras_tag.png)
+![Dijkstra's (https://github.com/HuanWangGATECH/leetcode/blob/6447986475a29e0c6cbddf70ca1d2fdaf2713fb7/leetcode_my_owntag/graph/shortest_path/Graph_Dijkstras_tag.png)
 
 
 ![Dijkstra's](https://leetcode.com/playground/93acvvnW)
