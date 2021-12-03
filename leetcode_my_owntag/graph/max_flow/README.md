@@ -1,16 +1,16 @@
 # Max Flow Algorithms
 General Max Flow Algorithm: 
-● Inputs: G(V,E), s, t, c
+## Inputs: G(V,E), s, t, c
 ○ Directed graph G(V,E)
 ○ s,t∈V such that s is a source and t is a sink
 ○ c is capacities such that c(u,v) > 0 for (u,v) ∈ E ○ This set of inputs is also known as a Flow Network
-● Outputs: f
+## Outputs: f
 ○ f is a function for flow such that f(u,v) gives how much is sent through (u,v)
 ○ ∑f(·,t) is maximized.
 ○ C = ∑f(·,t)
 ○ We call C (sometimes called f*) the size of max flow.
 
-● Steps:
+## Steps:
 1.Set f(u,v) = 0 for (u,v) ∈ E
 2.Build a residual network Gf=(V,Ef)
 3.Check for any path in Gf from s to t. 
