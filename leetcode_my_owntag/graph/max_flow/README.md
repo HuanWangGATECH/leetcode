@@ -22,3 +22,6 @@ General Max Flow Algorithm:
 by cf(path) units
 ■ For each backwards edge (v,u) along the path, decrease
 f(u,v) by cf(path) units 6.Recurse to step 2.
+
+
+![max_flow](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/graph/max_flow/maxflow.png)
