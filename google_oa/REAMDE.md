@@ -18,7 +18,7 @@ https://www.1point3acres.com/bbs/thread-822518-1-1.html
 
 
 # 1 
-[!oa1](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa1.jpg)
+![oa1](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa1.jpg)
 
 https://leetcode.com/playground/ey2GRaF7 my solution 
 
