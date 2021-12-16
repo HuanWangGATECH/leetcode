@@ -51,3 +51,9 @@ S = "cba" -> "c"
 # 6 
 
 给定‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌一个arr A，求|A[i] - A[j]| == |i - j|的最大值
+
+# 7 最长palindrome with pairs
+["gh","bc","hg"]
+返回 4 因为 "ghhg"
+# 8  10 rods  网上一搜就有（比如刷题王）
+"B2R5G2R2" -》 1
