@@ -29,3 +29,6 @@ https://pastebin.com/0aCyexe1 someone else solution
 ![oa2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa2.jpg)
 
 https://leetcode.com/playground/N3c7bwqK someone else solution 
+
+
+https://leetcode.com/playground/6PkVDknd my own solution 
