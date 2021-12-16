@@ -114,3 +114,28 @@ https://leetcode.com/tag/backtracking
                 for i in range(len(nums)):
                     self.dfs(nums[i:],path+[nums[i]],res,target)
             
+
+
+## combination sum 2
+    class Solution:
+        def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        
+            candidates=sorted(candidates)
+        
+            res=[]
+        
+            self.dfs(res,[],candidates,target)
+            return res 
+        
+        def dfs(self,res,path,candidates,target):
+        
+            if sum(path)==target:
+                res.append(path)
+                return 
+            elif sum(path)> target:
+                return 
+        
+            for i in range(len(candidates)):
+                if i>0 and candidates[i]==candidates[i-1]:
+                    continue
+                self.dfs(res,path+[candidates[i]],candidates[i+1:],target)
