@@ -48,3 +48,7 @@ S = "cba" -> "c"
 # 5 
 ![google_oa3](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa3.jpg)
 ![google_oa3_2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa3_2.jpg)
+
+# 6 
+
+给定‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌一个arr A，求|A[i] - A[j]| == |i - j|的最大值
