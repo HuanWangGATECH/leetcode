@@ -22,10 +22,10 @@ https://www.1point3acres.com/bbs/thread-822518-1-1.html
 
 https://leetcode.com/playground/ey2GRaF7 my solution 
 
-https://pastebin.com/0aCyexe1 someelse solution 
+https://pastebin.com/0aCyexe1 someone else solution 
 
 
 # 2 
 ![oa2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa2.jpg)
 
-
+https://leetcode.com/playground/N3c7bwqK someone else solution 
