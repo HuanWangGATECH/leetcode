@@ -15,6 +15,9 @@ https://www.1point3acres.com/bbs/thread-827735-1-1.html
 
 https://www.1point3acres.com/bbs/thread-822518-1-1.html
 
+## 难题
+https://www.1point3acres.com/bbs/thread-806350-1-1.html
+
 
 # 1 ng
 ![oa1](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa1.jpg)
