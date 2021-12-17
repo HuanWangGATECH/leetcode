@@ -82,3 +82,17 @@ recently added leetcode https://leetcode.com/problems/rings-and-rods/
 rods + palindrome
 第一题 给一个全是两位小写字母的array，返回最长的palindrome的长度. 比如[“kc”, “ck”, “ab”]就是4 因为“kcck”或“ckkc”最长
 ‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌第二题 有0-9号的rod 如果一根rod上同时有RGB得一分 返回总分
+
+
+solution others 
+
+  class Solution:
+      def countPoints(self, rings: str) -> int:
+
+          rods=[set() for _ in range(10)]
+          n=len(rings)
+          for i in range(0,n,2):
+              color=rings[i]
+              rod=int(rings[i+1])
+              rods[rod].add(color)
+          return sum(len(s)==3 for s in rods)   
