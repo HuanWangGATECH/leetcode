@@ -60,6 +60,8 @@ S = "cba" -> "c"
 ![google_oa7_2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa5_2.jpg)
 
 
+my solution. https://leetcode.com/playground/8PQCADDH
+
 # 8  10 rods  网上一搜就有（比如刷题王）
 "B2R5G2R2" -》 1
 
