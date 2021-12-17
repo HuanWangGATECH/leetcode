@@ -120,3 +120,6 @@ solution others
 # 9  给int A， A可以被切成a,b两个数，求|a-b|的最小值。eg: int A = 235, when a=2,b=35,then |a-b| = 32; when a = 23,b=5,then |a-b| = 18, 返回18
 # 10  给长度为n 的array A(N是偶数), split A into n/2 pairs, [Ai,Aj], 返回所有pair中两个数最大和的最小可能值。 eg: int[] A= [1,2,4,6‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌]，当分成[1,6][2,4]的时候最大和最小为7，返回7。
 https://www.1point3acres.com/bbs/thread-796082-1-1.html
+
+
+# 11 intern  https://www.1point3acres.com/bbs/thread-778729-1-1.html
