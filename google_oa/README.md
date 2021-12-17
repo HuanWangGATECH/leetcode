@@ -69,6 +69,8 @@ S = "cba" -> "c"
 
 思路 https://www.1point3acres.com/bbs/thread-801966-1-1.html
 
+思路 https://www.1point3acres.com/bbs/thread-800930-1-1.html
+
 # 7 ng 最长palindrome with pairs
 ["gh","bc","hg"]
 返回 4 因为 "ghhg"
