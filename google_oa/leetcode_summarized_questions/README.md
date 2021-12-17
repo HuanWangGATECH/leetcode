@@ -11,6 +11,7 @@ Example 1:
 Input: [-1, 3, -1, 8, 5 4]
 Output: 2
 Explanation: we can change -1, -1, 8 to 3, 4 or 5
+
 Example 2:
 
 Input: [10, 10, 3, 4, 10]
@@ -24,10 +25,12 @@ Example 1:
 Input: "aaaa"
 Output: 3
 Explanation: we can get a - aaa, aa - aa, aaa- a
+
 Example 2:
 
 Input: "bac"
 Output: 0
+
 Example 3:
 
 Input: "ababa"
