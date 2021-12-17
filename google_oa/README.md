@@ -62,6 +62,8 @@ S = "cba" -> "c"
 
 my solution. https://leetcode.com/playground/8PQCADDH
 
+my new faster solution https://leetcode.com/playground/bYPXAHBy
+
 # 8  10 rods  网上一搜就有（比如刷题王）
 "B2R5G2R2" -》 1
 
