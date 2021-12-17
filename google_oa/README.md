@@ -57,10 +57,17 @@ S = "cba" -> "c"
 ![google_oa3_2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa3_2.jpg)
 ![google_oa3_3](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa10.jpg)
 
+思路 https://www.1point3acres.com/bbs/thread-799640-1-1.html
+思路 https://www.1point3acres.com/bbs/thread-801966-1-1.html
+
 # 6 ng
 
 给定‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌一个arr A，求|A[i] - A[j]| == |i - j|的最大值
 ![google_oa6](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa9.jpg)
+
+思路 https://www.1point3acres.com/bbs/thread-799640-1-1.html
+
+思路 https://www.1point3acres.com/bbs/thread-801966-1-1.html
 
 # 7 ng 最长palindrome with pairs
 ["gh","bc","hg"]
