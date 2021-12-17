@@ -37,6 +37,8 @@ given an array consisting of N integers, returns the maximum possible number of 
 A = [1,9,8,100,2] -> 2 (A[0],A[1]) and (A[2], A[4])
 A = [2,2,2,3] -> 1 (A[0], A[1])
 
+![google_oa3](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa8.jpg)
+
 # 4 
 
 given a string s consisting of lowercase letters, return the longest consistent fragment which begins and ends with the same letter. if there are many possible answers, return the one starting‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌ at the earliest position.
