@@ -64,8 +64,8 @@ my solution. https://leetcode.com/playground/8PQCADDH
 
 my new faster solution https://leetcode.com/playground/bYPXAHBy
 
-# 8  10 rods  网上一搜就有（比如刷题王）
-"B2R5G2R2" -》 1
+# 8  10 rods  
+recently added leetcode https://leetcode.com/problems/rings-and-rods/
 
 ![google_oa8](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa6.jpg)
 
