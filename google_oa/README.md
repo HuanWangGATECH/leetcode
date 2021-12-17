@@ -44,6 +44,9 @@ S = "cbaabaab" -> "baabaab"
 S = "performance" -> "reformance"
 S = "cba" -> "c"
 
+![google_oa4](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa7.jpg)
+
+
 # 5 
 ![google_oa3](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa3.jpg)
 ![google_oa3_2](https://github.com/HuanWangGATECH/leetcode/blob/main/google_oa/google_oa3_2.jpg)
