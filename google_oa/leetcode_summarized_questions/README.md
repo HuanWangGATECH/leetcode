@@ -18,6 +18,8 @@ Input: [10, 10, 3, 4, 10]
 Output: 0
 Explanation: change 3 and 4 to 10
 
+
+
 # 2. Given a string S, we can split S into 2 strings: S1 and S2. Return the number of ways S can be split such that the number of unique characters between S1 and S2 are the same.
 
 Example 1:
@@ -36,3 +38,7 @@ Example 3:
 Input: "ababa"
 Output: 2
 Explanation: ab - aba, aba - ba
+
+https://leetcode.com/problems/number-of-good-ways-to-split-a-string/
+
+
