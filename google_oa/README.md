@@ -81,6 +81,8 @@ Two cases  Ai-Aj= i-j or Ai-Aj=j-i
 transformed into Ai+i=Aj+j or Ai-i=Aj-j 
 
 
+# my solution https://leetcode.com/playground/FoPeJk6M
+
 # 7 ng 最长palindrome with pairs
 ["gh","bc","hg"]
 返回 4 因为 "ghhg"
