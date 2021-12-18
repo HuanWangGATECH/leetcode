@@ -1,7 +1,7 @@
 # See questions here https://algo.monster/problems/google_online_assessment_questions
 
 
-Compare Strings
+## 1 Compare Strings
 
 A string is defined to be "strictly smaller" than another string when the number of occurrences of the lexicographically smallest character in the string is less than that of the other. For example, "abcd" is strictly smaller than "aaa" because the smallest character in "abcd", "a", appears 1 time, whereas the smallest character in "aaa", "a", appears 3 times.
 
