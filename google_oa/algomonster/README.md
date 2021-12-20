@@ -134,6 +134,10 @@ Output: 21.9911
 
 ## 4 Minimum Number of Decreasing Subsequence Partitions
 
+https://edydfang.com/2019/11/19/longest-increasing-subsequence-problem-and-its-duality/
+
+https://www.geeksforgeeks.org/minimum-number-of-increasing-subsequences/
+
 Given an integer array, split it into strictly decreasing subarrays. Return the minimum number of decreasing subarrays you can get from splitting the array.
 
 Examples
