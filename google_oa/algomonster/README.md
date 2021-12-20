@@ -169,6 +169,8 @@ Explanation:
 
 ## 5 Pick Up Coupons
 
+https://leetcode.com/discuss/interview-question/356402/google-oa-2018-lottery-game
+
 You are given a scratchcard consists of a row of non-negative integers. To win the scratch game, you need to scratch at least 2 numbers of the same value. You can only scratch consecutive numbers from the card. Scratching each number costs 1 dollar. Return the minimum cost to win the game, or -1 if winning is not possible.
 
 Examples
@@ -189,6 +191,11 @@ Explanation:
 There are no numbers of the same value.
 
 ## 6 Rose garden/onion picking
+
+https://leetcode.com/discuss/interview-question/334191/google-oa-min-days-to-bloom
+
+https://leetcode.com/discuss/interview-question/586349/google-oa-2019-rose-garden
+
 
 You are planting onions to make salads. Given an array of positive integers that indicates the day that each of your onion is ready for harvest, the minimum number of adjacent mature onions required for a salad, and the number of salads you want to make, return the earliest day that you can finish making all salads. If it is impossible to make the required number of salads, return -1.
 
