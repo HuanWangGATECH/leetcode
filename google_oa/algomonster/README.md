@@ -265,6 +265,7 @@ Constraints:
 1 <= n <= 2000
 
 ## 8 water plants / soup 
+https://leetcode.com/discuss/interview-question/356449/google-oa-2019-watering-plants
 
 You work in a restaurant and is tasked to fill some bowls with soup in a big stock pot. The bowls are positioned in a row, and you are going to fill the bowls with a large ladle. To avoid mistakes, you have decided to:
 
@@ -281,7 +282,9 @@ Constraints
 1 <= bowls[i] <= 10^6
 1 <= capacity <= 10^9
 The ladle is large enough to fully fill any bowl
+
 Examples
+
 Example 1:
 Input:
 bowls = [2, 4, 5, 1, 2]
