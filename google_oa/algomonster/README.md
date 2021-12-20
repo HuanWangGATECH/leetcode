@@ -39,6 +39,24 @@ Constraints
 1 <= length of any string in str1 or str2 <= 10
 All the input strings are made up of lowercase English alphabets (a-z)
 
+
+A good solution 
+
+  class Solution:
+      def numSmallerByFrequency(self, queries: List[str], words: List[str]) -> List[int]:
+          # 1. Capture counts of smallest characters in each word, and sort 
+          # the list in ascending order.
+          W = sorted([w.count(min(w)) for w in words])
+        
+          res = []
+          for q in queries:
+              # 2. Perform binary search of smallest characters in each query
+              # against the sorted list from step#1.
+              cnt = q.count(min(q))
+              idx = bisect.bisect(W, cnt)
+              res.append(len(words) - idx)
+          return res
+
 ## 2 largest subarray 
 
 An array A is greater than an array B if the first non-matching item in both arrays has a greater value in A than in B. For example,
