@@ -59,6 +59,10 @@ A good solution
 
 ## 2 largest subarray 
 
+
+https://www.geeksforgeeks.org/greatest-contiguous-sub-array-of-size-k/
+
+
 An array A is greater than an array B if the first non-matching item in both arrays has a greater value in A than in B. For example,
 
 A = [3, 4, 9, 6, 8]
@@ -87,6 +91,8 @@ Explanation:
 There are 2 possible subarrays of size 4: [1, 4, 3, 2] and [4, 3, 2, 5], and the largest subarray is [4, 3, 2, 5].
 
 ## 3 maximum area serving pizza /cake 
+
+
 
 Given an array of positive integers representing the radii of circular pizzas and the number of guests at a movie party, return the size of the largest piece of pizza (rounded to 4 decimal places) that can be cut so that every guest gets a slice of pizza with the same size. It is not possible that a single slice has some part of one pizza and some part of another pizza, and each guest gets only once slice of pizza.
 
