@@ -3,6 +3,8 @@
 
 ## 1 Compare Strings
 
+https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
+
 A string is defined to be "strictly smaller" than another string when the number of occurrences of the lexicographically smallest character in the string is less than that of the other. For example, "abcd" is strictly smaller than "aaa" because the smallest character in "abcd", "a", appears 1 time, whereas the smallest character in "aaa", "a", appears 3 times.
 
 In another example, "d" is strictly smaller than "ff" because the smallest character in "d", 'd', appears 1 time, and the smallest character in "ff", 'f', appears 2 times.
