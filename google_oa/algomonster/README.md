@@ -298,6 +298,8 @@ First, you fill bowl 0 and 1 - 2 steps. Then, you go back and refill - 2 steps -
 
 ## 9 split strings 
 
+https://leetcode.com/problems/number-of-good-ways-to-split-a-string/
+
 Given a string s with length n, how many ways can you split it into two substrings s_1 and s_2 such that the number of unique characters in s_1 and s_2 are the same?
 
 Parameter
