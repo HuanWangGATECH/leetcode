@@ -76,3 +76,68 @@ E.g. {0: [1,3], 1: [2, 0], 2:[1,3], 3:[0, 2]}, output [0,1,2,3] or [1,2,3,0] or 
 大家加油！希望都拿到心仪的 offer~
 找工不易，积分不够看不了一些帖子 😭
 求加米!
+  
+## 5. https://www.1point3acres.com/bbs/thread-830277-1-1.html
+  
+  BQ天竺姐姐
+1、和teammate有conflict
+2、最让你骄傲的一个project
+3、在team合作时候学到了什么
+4、最大的challenge
+5、有没有展现leadership的经历
+6、未来3年内的打算
+问了超多问题，直到超时5分钟她才发现，全程一直在打字，感觉应该面的不错？ 问题都准备到了，BQ的关键就在于多准备小故事，然后套到对应的问题上
+最后反向BQ：如果有幸加入Google，能给我一些建议吗？
+天竺姐姐：If you got an offer, please have confidence you deserve it.
+这句话给我非常大的触动，非常感谢！
+以下内容需要积分高于 188 您已经可以浏览
+Coding轮开始
+第一题，国人大哥
+1.        Input: [1, 10 Alice] [1, 6 Bob] [5, 12 Cat] [15, 20 Dog]
+Output:        1-5                Alice Bob
+             5-6                Alice Bob Cat
+             6-10        Alice Cat
+            10-12        Cat
+            15-20        Dog
+非常像刷题网，meeting room的变种，最开始想的是用一个minHeap+一个maxHeap来做，但是中间具体implement的时候卡了半天，hint提示先sort，然后用双指针做，最后时间不够了，只是讲清楚了思路，连反向BQ也没来得及问，面的最差的一轮，没问到follow up，还好下一轮是午休之后，我反思了自己的问题，下午的状态就开始好起来了！
+第二题，亚裔姐姐
+2.        Input: “The    weather is good, and the   moon   is bright.”,
+int colWidth：11
+Output: “The weather”
+             “is good, “
+             “and the ”
+             “the moon is”
+             “bright.”
+比较简单的String题目，具体思路是先把input转换成String array，然后不断更新colWidth，如果够放的话就继续放一个word，细节是如果这一行还够放一个space，换行前要放一个space，快速写好后让我提出更多test case，我问是否前后有更多spaces，以及word中间是否有超过一个space，她说是的，follow up就是解决这种situation，
+Input: “      The    weather     is     good , and the   moon   is     bright.     ”, 快速修改了拿到String array的helper function就过了
+反向BQ： A most challenging project in google？
+亚裔姐姐：她说了一些关于project的东西，然后我们聊了聊Go语言的特性，拿到了亚裔姐姐的邮箱，应该也算面的不错
+第三题，欧洲大哥
+一上来先是问我知不知道什么是sweep keyboard，我说不知道，他给我解释了其实就是滑动输入
+3.        Input: “bsdfsdfodewrwerewbsdfsdfsdfas”, List<String> words {boba, bobas, apple, happy, kit}
+Output: first word(boba)
+比较简单的dfs, 正常思路是用set做，但是我问了他words list的size，他说非常大，我就用trie做了，他可能也没想到我会用trie，问了我好多trie为什么用trie以及我写的trieNode class的细节问题。 快速写完之后是follow up：return the longest String
+Output: Longest word(bobas)
+这个也不难，保留一个global String，如果更长就更新。
+反向BQ：你觉得在Google工作怎么样，喜欢吗？
+欧洲大哥：前两年在amazon，今年刚过来，很喜欢这里的工作
+然后我说我觉得Googler都特别酷，他说没有没有，我们都是普通人(有点***
+这题也写的很快，而且用trie之后我感觉反馈特别好，也算面的不错
+第四题，中东小哥
+这是整个Google五轮中唯一一个问我自我介绍的，还好我背的比较牢，然后问我的背景，说我是不是开发过游戏，我说是的，他就说那我们来一道游戏的题目吧
+先是一道简单的一维dp，一个游戏，每种move，需要turns，可以打出damage，最多x轮能打出的伤害
+moves[[1,1][2,3][3,4][7,10]], turns 10  [turns, damage]
+Output: max damage you can get
+最近正好dp题目做的很多，学校里的算法课也一直学的dp，所以一上来先说了一个二维dp的做法，他说能不能只用一维dp，我就换了个思路，然后写完了
+follow up：如果有些move会携带buff，持续y回合，当你有buff时，你造成的damage 双倍，
+这个follow up是今天最难的一个了，当我讲完思路之后升级到二维dp后，他说没问题，就开始implement了，但是因为时间剩的不是很多，implement到一半的时候，
+他说不用继续写了，到这一步已经better ‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌than most candidates了，最后聊了两句就结束了，应该也算面的还可以
+最后上timeline
+10/25 OA
+10/31 Interview prep call
+11/19 5轮 VO
+12/6 Team placement form
+12/9 PA patch - GCP
+12/10 Offer Approved
+从VO开始到Offer正好三周整，碰到一个效率比较高的recruiter，面试的题目也不太难，运气还算比较好，中间一度觉得国人大哥的第一轮面的不是太好，但结果也过了
+祝地里的小伙伴找工顺利! 如果觉得有帮助到的求加米，感谢！！~
