@@ -149,3 +149,75 @@ follow up：如果有些move会携带buff，持续y回合，当你有buff时，�
 12/10 Offer Approved
 从VO开始到Offer正好三周整，碰到一个效率比较高的recruiter，面试的题目也不太难，运气还算比较好，中间一度觉得国人大哥的第一轮面的不是太好，但结果也过了
 祝地里的小伙伴找工顺利! 如果觉得有帮助到的求加米，感谢！！~
+  
+  ## 6. https://www.1point3acres.com/bbs/thread-830242-1-1.html
+  
+  1st Interview: 11:15am-11:45am 还是同一个人 问BQ
+（1）有没有主动做超过自己职责范围的工作
+（2）在做project有没有遇到没有预想到的问题
+（3）是什么一直激励你学习新的知识在CS领域
+。。。还有一些记不清楚了
+2nd Interview: 12:00pm-12:45pm
+一个白人小哥 很nice 口音很清楚 太舒服了
+以下内容需要积分高于 200 您已经可以浏览
+反转链表
+follow up 二维的链表 right 和 down两个指针 反转
+3rd Interview: 1:00pm-1:45pm
+一个阿三 体验感太差了 怎么这么mean 呢？ 我跟他说话压根不理我 我一般问第三遍才蹦出一个回答 给我搞得快哭了 这一轮特别差劲
+给一个index 判断是否在complete binary tree里面 要求复杂度小于O(n) 想不出来就写了个O(n)的 哭了
+4th Interview: 3:00pm-3:45pm
+国人小哥 超级nice 一直笑呵呵 一直提示我 一直引导我 感觉像是带着我在做题的老师 hhh
+就是我太紧张了 脑子想说“break 语句” 脱口 “we can broke up ”  太尴尬了😅
+in order traverse binary tree
+follow up: 判断两个树是否有相同的in order path 两个树的样子肯定不一定一样 要求同时遍历两个树
+5th Interview: 4:00pm-4:45pm
+判断不出来 只能说是亚洲人 超级新的题 我听了都懵逼了。。。
+[hide=300]
+card game
+x shakes
+y ranks
+‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌
+Staright: must be 5 cards and same shakes and consecutive ranks for example: S1R2 S1R3 S1R4 S1R5 S1R6
+given a list of string [S1R0, S2R7 .....] 找出能组成straight 的最大的 意思就是S的number大 R的number也大
+要求比sort nlogn 复杂度好的算法
+  
+  
+## 7. https://www.1point3acres.com/bbs/thread-829971-1-1.html
+  
+  
+10/5 OA
+11/5 VO
+12/6 HR通知VO过了开始PA match，中间催过两次
+12/8 PA match通过，口头offer
+12/9 正式Offer
+-------------VO面经--------------
+5轮VO，一轮BQ+四轮代码，每轮45分钟，用的类似Google docs的平台写代码，不能compile也不能跑，面试官感觉不是特别苛求syntax上的准确度，只要算法准确半pseudo code也可以接受的样子，而且某些模糊的地方可以暂用black box function代替，就是定义一个功能性的function但是不需要具体写出来。四轮代码题的初始问题都是lc easy，follow up有些有lc median的难度，主要是需要及时的沟通
+1 BQ：
+一个白人小哥，简单寒暄之后发现他也很少给人面BQ，感觉和我一样紧张，问了5题左右，大概回答方针和亚麻家军规差不多，问题列表地里都有就不详细说了（主要是时间比较久远有点忘了），我回答的比较快所以后来又追问了一个简历上的项目经验
+2 代码：
+面试官是一个亚洲姐姐，问题很简单忘了，但是初始问题是比lc easy还要简单的那种，只记得用的binary search，follow up是在原题的基础上修改，涉及到一点sorting算法的问题，问了时空间复杂度。我在其中的一个follow up问题里在面试官表示已经过了之后找到了自己的一个bug并提出修改，面试官表示会在评价里加入这一点。
+3 代码：
+一个白人大哥
+input是代表molecule的两个组成array，分别代表里面的atom和bond, 比如array A = ["H", "C", "H", "O"], B = [[0,1], [1,2], [1,3], [1,3]。 HCO分别是hydrogen, carbon, oxygen.问按照array B的链接方法是否组成一个valid molecule，其中H需要一条bond，C需要4条bond，O需要2条bond。最后组成的molecule大概是这样：
+      O
+      ||
+H - C - H
+follow up是问如果只计算每个atom的bond的数量，可能会存在单独分开的两个molecule，问如果检测这样的情况以及存在这样情况如何定义validness还有时空复杂度
+4 代码：
+白人小哥
+初始问题是一个binary search
+follow up 是用了他以前工作相关的问题，涉及到dfs+sorting算法
+第二个followup 涉及到 multi-threading，不过不用写具体代码出来只要口头叙述
+5 代码：
+欧洲小哥
+初始问题是graph theory，这题我搞砸了，确实是面太久脑子有点昏，花了很久才写出来
+写之前被要求先说时空复杂度，一个是construct graph的时空复杂度，另一个是使用graph的复杂度
+我写到一半发现原来说的不太对，只好跟他说我之前说错了construct graph应该是O(mn^2)
+follow up还是graph得问题，不过修改题干之后要用不同的方式去建立初始的graph，时间不够了于是口头叙述算法
+这一轮虽然算是写出来了但是比较勉强
+总体体验是代码有小问题其实没关系，重点要思路正确以及对自己写的算法要足够理解（比如复杂度），VO前四轮的面试官都非常有耐心交流也很顺畅
+个人感觉，包括HR推荐的都是要注重沟通，hr亲口说狗家面试官除了看你本身代码能力以外也作为和你合作的对象考察你和别人合作解决问题的能力，所以要把思路完整的说出来，卡壳尽管问，并不会被扣太多分。个人感觉如果不沟通只低头写代码，就算写对也不太会有很高的评价。
+----------总结----------
+面试体验已经hr沟通体验都很好，OA甚至有一题是Brute force解的，但依旧给了VO（可能今年比较缺人）.
+VO总体难度不高，尤其‍‌‍‌‍‌‌‍‌‍‍‌‍‍‍‍‌‌是初始问题的难度都是lc easy, 有了初始的框架，follow up问题难度即使提升思路也会比较顺畅，我猜想是故意设计的面试流程以考察思路连贯性，沟通的积极性，以及尽可能降低刷题多的人的优势。
+由于没有其他更好offer所以直接接了湾区的ng标准包，22年8月入职，同去湾区的可以加我！
