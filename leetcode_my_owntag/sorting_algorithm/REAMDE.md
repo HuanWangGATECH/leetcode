@@ -2,13 +2,13 @@
 
 time complexity O(n^2) space complexity O(1)
 
-  #Python program for implementation of Selection
-  #Sort
-  import sys
-  A = [64, 25, 12, 22, 11]
+    #Python program for implementation of Selection
+    #Sort
+    import sys
+    A = [64, 25, 12, 22, 11]
  
-  # Traverse through all array elements
-  for i in range(len(A)):
+    # Traverse through all array elements
+    for i in range(len(A)):
      
       # Find the minimum element in remaining
       # unsorted array
@@ -21,7 +21,7 @@ time complexity O(n^2) space complexity O(1)
       # the first element       
       A[i], A[min_idx] = A[min_idx], A[i]
  
-  # Driver code to test above
-  print ("Sorted array")
-  for i in range(len(A)):
-      print("%d" %A[i]),
+    # Driver code to test above
+    print ("Sorted array")
+    for i in range(len(A)):
+        print("%d" %A[i]),
