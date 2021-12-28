@@ -56,3 +56,7 @@ time complexity O(n^2) space complexity O(1)
     print ("Sorted array is:")
     for i in range(len(arr)):
         print ("%d" %arr[i]),
+
+
+# 3. Insertion sort 
+
