@@ -157,3 +157,9 @@ Time O(nlogn) Space O(n)
         print("Sorted array is: ", end="\n")
         printList(arr)
   
+  
+  #5 quick sort  pivot sort 
+  
+  https://leetcode.com/playground/4dvwY6cu
+  
+  https://www.geeksforgeeks.org/python-program-for-quicksort/
