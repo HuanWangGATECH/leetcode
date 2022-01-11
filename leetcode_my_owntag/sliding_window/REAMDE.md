@@ -136,3 +136,7 @@ Output: 3
 
 Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating substring "ccc".
 '''
+
+
+https://leetcode.com/playground/X2eySaji
+
