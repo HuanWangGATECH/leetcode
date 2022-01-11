@@ -200,3 +200,142 @@ Output: 3
 Explanation: Longest substrings without any repeating characters are "abc" & "cde".
 
 '''
+
+
+https://leetcode.com/playground/mauLVRJe
+
+# Permutation in a String (hard)
+
+'''
+Problem Challenge 1
+
+Permutation in a String (hard) 
+
+Given a string and a pattern, find out if the string contains any permutation of the pattern.
+
+Permutation is defined as the re-arranging of the characters of the string. For example, “abc” has the following six permutations:
+
+abc
+
+acb
+
+bac
+
+bca
+
+cab
+
+cba
+
+If a string has ‘n’ distinct characters it will have n!n! permutations.
+
+Example 1:
+
+Input: String="oidbcaf", Pattern="abc"
+
+Output: true
+
+Explanation: The string contains "bca" which is a permutation of the given pattern.
+
+Example 2:
+
+Input: String="odicf", Pattern="dc"
+
+Output: false
+
+Explanation: No permutation of the pattern is present in the given string as a substring.
+
+Example 3:
+
+Input: String="bcdxabcdy", Pattern="bcdyabcdx"
+
+Output: true
+
+Explanation: Both the string and the pattern are a permutation of each other.
+
+Example 4:
+
+Input: String="aaacb", Pattern="abc"
+
+Output: true
+
+Explanation: The string contains "acb" which is a permutation of the given pattern.
+
+'''
+
+# Problem Challenge 2 - String Anagrams (hard) 
+
+'''
+Problem Challenge 2
+
+String Anagrams (hard) 
+
+Given a string and a pattern, find all anagrams of the pattern in the given string.
+
+Anagram is actually a Permutation of a string. For example, “abc” has the following six anagrams:
+
+abc
+
+acb
+
+bac
+
+bca
+
+cab
+
+cba
+
+Write a function to return a list of starting indices of the anagrams of the pattern in the given string.
+
+Example 1:
+
+Input: String="ppqp", Pattern="pq"
+
+Output: [1, 2]
+
+Explanation: The two anagrams of the pattern in the given string are "pq" and "qp".
+
+Example 2:
+
+Input: String="abbcabc", Pattern="abc"
+
+Output: [2, 3, 4]
+
+Explanation: The three anagrams of the pattern in the given string are "bca", "cab", and "abc".
+'''
+# Problem Challenge 3 - Smallest Window containing Substring (hard)
+
+'''
+Problem Challenge 3
+
+Smallest Window containing Substring (hard) 
+
+Given a string and a pattern, find the smallest substring in the given string which has all the characters of the given pattern.
+
+Example 1:
+
+Input: String="aabdec", Pattern="abc"
+
+Output: "abdec"
+
+Explanation: The smallest substring having all characters of the pattern is "abdec"
+
+Example 2:
+
+Input: String="abdabca", Pattern="abc"
+
+Output: "abc"
+
+Explanation: The smallest substring having all characters of the pattern is "abc".
+
+Example 3:
+
+Input: String="adcad", Pattern="abc"
+
+
+Output: ""
+
+Explanation: No substring in the given string has all characters of the pattern.
+
+'''
