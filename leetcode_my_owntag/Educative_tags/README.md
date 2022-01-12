@@ -8,7 +8,7 @@
 
 4. Pattern: Merge Intervals
 
-5.Pattern: Cyclic Sort
+5. Pattern: Cyclic Sort
 
 6. Pattern: In-place Reversal of a LinkedList
 
