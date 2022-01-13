@@ -93,3 +93,101 @@ https://leetcode.com/playground/jRD9nxqy
 
   print (midLinkedList(head))
 ```
+
+# Problem Challenge 1 - Palindrome LinkedList (medium)
+
+'''
+Problem Challenge 1
+
+Palindrome LinkedList (medium)
+
+Given the head of a Singly LinkedList, write a method to check if the LinkedList is a palindrome or not.
+
+Your algorithm should use constant space and the input LinkedList should be in the original form once the algorithm is finished. The algorithm should have 
+
+O(N)O(N) time complexity where ‘N’ is the number of nodes in the LinkedList.
+
+Example 1:
+
+Input: 2 -> 4 -> 6 -> 4 -> 2 -> null
+
+Output: true
+
+Example 2:
+
+Input: 2 -> 4 -> 6 -> 4 -> 2 -> 2 -> null
+
+Output: false
+'''
+
+https://leetcode.com/playground/Jero3bdc
+
+```python 
+def palindromeLinkedList(head):
+    
+    slow=head
+    fast=head
+   
+    while fast and fast.next:
+        #print (slow.value,fast.value)
+        slow=slow.next
+        fast=fast.next.next
+    
+    
+    # slow is the middle of the linked list 
+    # reverse linked list starting from slow and get its head 
+    reSecondHalfHead=reverseLinkedList(slow)
+    
+    
+    
+    while head and reSecondHalfHead:
+        if head.value!=reSecondHalfHead.value:
+            return False
+        head=head.next
+        reSecondHalfHead=reSecondHalfHead.next 
+        
+    return True 
+    
+    
+def reverseLinkedList(head):
+    prev=None 
+    curr=head
+    while curr:
+        temp=curr.next
+        curr.next=prev
+        prev=curr
+        curr=temp 
+        
+        
+    return prev
+
+
+def printLinkedList(head):
+    
+    while head:
+        print (head.value)
+        head=head.next
+    
+    
+    
+class Node:
+    def __init__(self,value=None):
+        self.value=value
+        self.next=None 
+        
+
+        
+        
+head = Node(2)
+head.next = Node(4)
+head.next.next = Node(6)
+head.next.next.next = Node(4)
+head.next.next.next.next = Node(2)
+
+
+#print (reverseLinkedList(node1).value)
+#printLinkedList(node1)
+print (palindromeLinkedList(head))
+```
+
+
