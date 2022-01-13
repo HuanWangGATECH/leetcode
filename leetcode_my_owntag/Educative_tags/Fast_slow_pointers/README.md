@@ -59,7 +59,7 @@ Output: 4
 https://leetcode.com/playground/jRD9nxqy
 
 
-'''python
+```python 
   def midLinkedList(head):
       slow=head
       fast=head
@@ -92,4 +92,4 @@ https://leetcode.com/playground/jRD9nxqy
   head.next.next.next.next.next = Node(6)
 
   print (midLinkedList(head))
-'''
+```
