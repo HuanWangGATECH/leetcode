@@ -1,3 +1,4 @@
+# Cyclic sort 
 '''
 Problem Statement 
 
@@ -53,4 +54,52 @@ def cyclic_sort(nums):
     return nums    
     
 print (cyclicSort([3, 1, 5, 4, 2]))
+```
+# Find all duplicate numberw 
+
+'''
+Problem Statement 
+
+We are given an unsorted array containing ‘n’ numbers taken from the range 1 to ‘n’.
+
+The array has some duplicates, find all the duplicate numbers without using any extra space.
+
+Example 1:
+
+Input: [3, 4, 4, 5, 5]
+
+Output: [4, 5]
+
+Example 2:
+
+Input: [5, 4, 7, 2, 3, 5, 3]
+
+Output: [3, 5]
+'''
+https://leetcode.com/playground/new/empty
+
+```python 
+def find_all_duplicates(nums):
+    i = 0
+    while i < len(nums):
+        j = nums[i] - 1
+        if nums[i] != nums[j]:
+            nums[i], nums[j] = nums[j], nums[i]  # swap
+        else:
+            i += 1
+    print (nums)
+    
+    
+    duplicateNumbers = []
+    for i in range(len(nums)):
+        if nums[i] != i + 1:
+            duplicateNumbers.append(nums[i])
+
+    return duplicateNumbers
+
+
+
+print (find_all_duplicates([3, 4, 4, 5, 5]))
+
+print (find_all_duplicates([8,8,7,7,6,6,2,3]))
 ```
