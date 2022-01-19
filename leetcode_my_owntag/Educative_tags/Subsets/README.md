@@ -21,6 +21,43 @@ Output: [], [1], [5], [3], [1,5], [1,3], [5,3], [1,5,3]
 
 https://leetcode.com/playground/new/empty
 
+To generate all subsets of the given set, we can use the Breadth First Search (BFS) approach. We can start with an empty set, iterate through all numbers one-by-one, and add them to existing sets to create new subsets.
+
+Let’s take the example-2 mentioned above to go through each step of our algorithm:
+
+Given set: [1, 5, 3]
+
+Start with an empty set: [[]]
+
+Add the first number 1 to all the existing subsets to create new subsets: [[],[1]];
+
+Add the second number 5 to all the existing subsets: [[], [1], [5], [1,5]];
+
+Add the third number 3 to all the existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
+
+Since the input set has distinct elements, the above steps will ensure that we will not have any duplicate subsets.
+
+
+```python 
+
+def subsetsBFS(arr):
+    
+    subsets=[]
+    subsets.append([])
+
+    for i in range(len(arr)):
+        print (arr[i],subsets)
+        for j in range(len(subsets)):
+            subsets.append(subsets[j]+[arr[i]])
+           
+    return subsets
+
+
+#print (subsets([1,3]))
+print (subsetsBFS([1,3]))
+
+```
+
 ```python 
 def subsets(arr):
     res=[]
