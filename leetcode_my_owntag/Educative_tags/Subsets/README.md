@@ -58,6 +58,9 @@ print (subsetsBFS([1,3]))
 
 ```
 
+And there is also a backtracing solution (recursive solution)
+
+
 ```python 
 def subsets(arr):
     res=[]
