@@ -57,6 +57,25 @@ def subsetsBFS(arr):
 print (subsetsBFS([1,3]))
 
 ```
+Educative solution 
+
+```python 
+#answer
+def find_subsets(nums):
+  subsets = []
+  # start by adding the empty subset
+  subsets.append([])
+  for currentNumber in nums:
+    # we will take all existing subsets and insert the current number in them to create new subsets
+    n = len(subsets)
+    for i in range(n):
+      # create a new subset from the existing subset and insert the current element to it
+      set = subsets[i].copy()
+      set.append(currentNumber)
+      subsets.append(set)
+
+  return subsets
+  ```
 
 And there is also a backtracing solution (recursive solution)
 
