@@ -291,5 +291,83 @@ if __name__ == "__main__":
  ```
 
 
+# Common application of heap 
+
+In most programming languages, Heaps are already built-in. Therefore, we usually do not need to implement a Heap from scratch. However, to use Heap adequately, we need to understand how Heap is commonly used.
+
+In this chapter, we will learn how to:
+
+Construct a Max Heap and a Min Heap.
+
+Insert elements into a Heap.
+
+Get the top element of a Heap.
+
+Delete the top element from a Heap.
+
+Get the length of a Heap.
+
+Perform time and space complexity analysis for common applications that use a Heap.
+
+
+# Construct a heap 
+
+
+Constructing a Heap means initializing an instance of a Heap. All methods of Heap need to be performed on an instance. Therefore, we need to initialize an instance before applying the methods. When creating a Heap, we can simultaneously perform the heapify operation. Heapify means converting a group of data into a Heap.
+
+Time complexity: O(N)O(N).
+
+Space complexity: O(N)O(N).
+
+```python
+import heapq
+
+# Construct an empty Min Heap
+minHeap = []
+heapq.heapify(minHeap)
+
+# Construct an empty Max Heap
+# As there are no internal functions to construct a Max Heap in Python,
+# So, we will not construct a Max Heap.
+
+# Construct a Heap with Initial values
+# this process is called "Heapify"
+# The Heap is a Min Heap
+heapWithValues = [3,1,2]
+heapq.heapify(heapWithValues)
+
+# Trick in constructing a Max Heap
+# As there are no internal functions to construct a Max Heap
+# We can multiply each element by -1, then heapify with these modified elements.
+# The top element will be the smallest element in the modified set,
+# It can also be converted to the maximum value in the original dataset.
+# Example
+maxHeap = [1,2,3]
+maxHeap = [-x for x in maxHeap]
+heapq.heapify(maxHeap)
+# The top element of maxHeap is -3
+# Convert -3 to 3, which is the maximum value in the original maxHeap
+```
+
+# python heapq
+
+Python Max Heap Video
+Python's built-in heap module, heapq, differs from the standard implementation of a heap in two ways. Firstly, it uses zero-based indexing, and this means that it stores the root node at index zero instead of the size of the heap. As a result, the relationship between the index of the children and parent nodes is slightly different. Secondly, the built-in heapq module does not offer a direct way to create a max heap. Instead, we must modify the value(s) of each element when inserting it into the heap and when removing it from the heap. In the following video, we will learn more about this process. There are several benefits from implementing a heap in this way (you can read about them in the previous link).
+
+# inserting an element 
+
+```python
+
+# Insert an element to the Min Heap
+heapq.heappush(minHeap, 5)
+
+# Insert an element to the Max Heap
+# Multiply the element by -1
+# As we are converting the Min Heap to a Max Heap
+heapq.heappush(maxHeap, -1 * 5)
+```
+
+# getting the top element of heap 
+
 
 
