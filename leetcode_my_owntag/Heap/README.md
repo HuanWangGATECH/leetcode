@@ -356,6 +356,12 @@ Python's built-in heap module, heapq, differs from the standard implementation o
 
 # inserting an element 
 
+Insertion means inserting a new element into the Heap. Note that, after the new element is inserted, properties of the Heap are still maintained.
+
+Time complexity: O(\log N)O(logN)
+
+Space complexity: O(1)O(1)
+
 ```python
 
 # Insert an element to the Min Heap
@@ -368,6 +374,65 @@ heapq.heappush(maxHeap, -1 * 5)
 ```
 
 # getting the top element of heap 
+
+The top element of a Max heap is the maximum value in the Heap, while the top element of a Min Heap is the smallest value in the Heap. The top element of the Heap is the most important element in the Heap.
+
+Time complexity: O(1)O(1).
+
+Space complexity: O(1)O(1).
+
+```python
+# Get top element from the Min Heap
+# i.e. the smallest element
+minHeap[0]
+# Get top element from the Max Heap
+# i.e. the largest element
+# When inserting an element, we multiplied it by -1
+# Therefore, we need to multiply the element by -1 to revert it back
+-1 * maxHeap[0]
+```
+
+# deleting top element 
+
+Note that, after deleting the top element, the properties of the Heap will still hold. Therefore, the new top element in the Heap will be the maximum (for Max Heap) or minimum (for Min Heap) of the current Heap.
+
+Time complexity: O(\log N)O(logN).
+
+Space complexity: O(1)O(1).
+
+```python 
+# Delete top element from the Min Heap
+heapq.heappop(minHeap)
+
+# Delete top element from the Max Heap
+heapq.heappop(maxHeap)
+```
+
+# getting the length of the heap 
+
+The length of the Heap can be used to determine the size of the current heap, and it can also be used to determine if the current Heap is empty. If there are no elements in the current Heap, the length of the Heap is zero.
+
+Time complexity: O(1)O(1)
+
+Space complexity: O(1)O(1)
+
+```python 
+# Length of the Min Heap
+len(minHeap)
+
+# Length of the Max Heap
+len(maxHeap)
+```
+
+# Space and time complexity 
+
+| heap method              | time complexity | space complexity |
+|--------------------------|-----------------|------------------|
+| construct a heap         | O(n)            | O(n)             |
+| insert an element        | O(logn)         | O(1)             |
+| get the top element      | O(1)            | O(1)             |
+| delete the top element   | O(logn)         | O(1)             |
+| get the size of the heap | O(1)            | O(1)             |
 
 
 
