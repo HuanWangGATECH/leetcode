@@ -126,3 +126,6 @@ Output: 7
 
 Explanation: The 3rd smallest number among all the arrays is 7.
 '''
+
+
+https://leetcode.com/playground/naHtbh4X
