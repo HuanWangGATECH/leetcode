@@ -31,3 +31,48 @@ Banana + Melon (total weight 5) => 10 profit
 
 This shows that Banana + Melon is the best combination as it gives us the maximum profit and the total weight does not exceed the capacity.
 '''
+
+
+
+https://leetcode.com/playground/Y9Kg24ag
+
+```python
+def knapsack01(profits,weights,capacity):
+    
+    n=len(profits)
+    if capacity <= 0 or n == 0 or len(weights) != n:
+        return 0
+    dp=[[0 for x in range(capacity+1)] for y in range(n+1)]
+    # populate the capacity = 0 columns, with '0' capacity we have '0' profit
+    
+    
+    ##initilization 
+    for i in range(0, n+1):
+        dp[i][0] = 0   
+    #dp[i][j] 0<= i <= n 0<=j <= capacity+1
+    for j in range(capacity+1):
+        dp[0][j]=0 
+    
+    
+    for i in range(1,n+1):
+        for j in range(1,capacity+1):
+            
+            dp[i][j]=dp[i-1][j]
+            if weights[i-1]<=j:
+                dp[i][j]=max(dp[i][j],dp[i-1][j-weights[i-1]]+profits[i-1])
+    
+    
+    
+    
+    
+    print (dp)
+    
+    
+    
+    return dp[n][capacity]
+
+    
+print (knapsack01([1, 6, 10, 16], [1, 2, 3, 5], 7))
+print (knapsack01([1, 6, 10, 16], [1, 2, 3, 5], 6))
+
+```
