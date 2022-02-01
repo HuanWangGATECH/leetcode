@@ -146,3 +146,52 @@ To handle this instead of adding 3 to all the existing subsets, we only add it t
     [[], [1], [3], [1,3], [3,3], [1,3,3]]
     
 Finally, add the forth number 5 to all the existing subsets: [[], [1], [3], [1,3], [3,3], [1,3,3], [5], [1,5], [3,5], [1,3,5], [3,3,5], [1,3,3,5]]
+
+
+https://leetcode.com/playground/UQR3ysBZ
+
+
+```python
+
+def subsetsWithDuplicates(arr):
+    
+    res=[]
+    res.append([])
+    arr=sorted(arr)
+    n=len(arr)
+    startindex=0
+    endindex=0
+    for i in range(n):
+        
+        if i>0 and arr[i]==arr[i-1]:
+            startindex=endindex 
+            
+        
+        endindex=len(res)
+        for j in range(startindex,endindex):
+            res.append(res[j]+[arr[i]])
+            
+    return res 
+
+def subsetsWithDuplicatesDFS(arr):
+    res=[]
+    
+    dfs(arr,[],res)
+    
+    return res 
+    
+def dfs(arr,path,res):
+    
+    res.append(path)
+    
+    for i in range(len(arr)):
+        if i >0 and arr[i]==arr[i-1]:
+            continue 
+        
+        dfs(arr[i+1:],path+[arr[i]],res)
+        
+        
+    
+    
+print (subsetsWithDuplicatesDFS([1,3,3,5]))
+```
