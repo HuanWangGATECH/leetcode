@@ -71,3 +71,25 @@ Output: 5
 
 Explanation: 10 is 1010 in binary, its complement is 0101 in binary, which is 5 in base-10.
 '''
+
+https://leetcode.com/playground/BGe2cYa6
+
+```python 
+
+import math 
+def complementOf10Base(num):
+    counter=0
+    temp=num
+    while temp>0:
+        temp=temp>>1
+        counter+=1
+    
+    allone=2**counter -1 
+    
+    return num^allone
+    
+    
+    
+print (complementOf10Base(8))
+print (complementOf10Base(10))
+```
