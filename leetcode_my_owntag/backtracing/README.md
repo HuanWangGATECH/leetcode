@@ -13,17 +13,17 @@ Conceptually, one can imagine the procedure of backtracking as the tree traversa
 # Example 1 
 Let's try to understand the concept of backtracking by a very basic example. We are given a set of words represented in the form of a tree. The tree is formed such that every branch ends in a word.
 
-![backtracking1](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking1.png)
+![backtracking1](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking1.jpeg)
 
 Our task is to find out if a given word is present in the tree. Let's say we have to search for the word AIM. A very brute way would be to go down all the paths, find out the word corresponding to a branch and compare it with what you are searching for. You will keep doing this unless you have found out the word you were looking for.
 
-![backtracking2](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking2.png)
+![backtracking2](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking2.jpeg)
 
 In the diagram above our brute approach made us go down the path for ANT and AND before it finally found the right branch for the word AIM.
 
 The backtracking way of solving this problem would stop going down a path when the path doesn't seem right. When we say the path doesn't seem right we mean we come across a node which will never lead to the right result. As we come across such node we back-track. That is go back to the previous node and take the next step.
 
-![backtracking3](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking3.png)
+![backtracking3](https://github.com/HuanWangGATECH/leetcode/blob/main/leetcode_my_owntag/backtracing/backtracking3.jpeg)
 
 
 In the above diagram backtracking didn't make us go down the path from node N. This is because there is a mismatch we found early on and we decided to go back to the next step instead. Backtracking reduced the number of steps taken to reach the final result. This is known as pruning the recursion tree because we don't take unnecessary paths.
