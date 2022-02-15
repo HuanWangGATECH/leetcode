@@ -63,7 +63,7 @@ class Solution:
     
 ## Output is 
     
-
+```python
 [] 0x7fe2318ffec0 1 0x7fe23170c8b0
 [] 0x7fe2318ffec0 1->2 0x7fe23170fa70
 [] 0x7fe2318ffec0 1->2->5 0x7fe2317586b0
@@ -72,6 +72,7 @@ class Solution:
 ['1->2->5'] 0x7fe2318ffec0 1->3 0x7fe231758970
 ['1->2->5', '1->3'] 0x7fe2318ffec0 1->3 0x7fe231758970
 ['1->2->5', '1->3'] 0x7fe2318ffec0 1 0x7fe23170c8b0
+```
 
 ## path here is a immutatble string variable that gets a new memory in each dfsTree call. Therefore, the outside dfsTree's path variable doesn't retain the inside dfsTree 
     
