@@ -62,7 +62,7 @@ class Solution:
         
     ```
     
-    Output is 
+Output is 
     
     ```python
 [] 0x7fe2318ffec0 1 0x7fe23170c8b0
@@ -76,7 +76,7 @@ class Solution:
     ```
     path here is a immutatble string variable that gets a new memory in each dfsTree call. Therefore, the outside dfsTree's path variable doesn't retain the inside dfsTree 
     
-    ![dfsTree_memory]()
+    ![dfsTree_memory](https://github.com/HuanWangGATECH/leetcode/blob/main/python_basics/DFS_memory_list_deep_copy/dfsTree_memory.jpg)
     
     
     
