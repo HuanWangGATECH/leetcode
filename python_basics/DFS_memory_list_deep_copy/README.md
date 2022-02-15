@@ -27,7 +27,7 @@ https://stackoverflow.com/questions/32448414/what-does-colon-at-assignment-for-l
 https://www.geeksforgeeks.org/python-cloning-copying-list/
 
 
-![dfsTree_memory](https://github.com/HuanWangGATECH/leetcode/blob/main/python_basics/DFS_memory_list_deep_copy/dfsTree_memory.jpg)
+![dfsTree_memory](https://github.com/HuanWangGATECH/leetcode/blob/main/python_basics/DFS_memory_list_deep_copy/dfsTree_memory.png)
 
 ```
 class Solution:
