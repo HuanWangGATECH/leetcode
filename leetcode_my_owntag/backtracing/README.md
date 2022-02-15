@@ -2,6 +2,11 @@
 
 ( I have done some problems using gmail logged in leetcode )
 
+list of questions in leetcode 
+
+https://leetcode.com/tag/backtracking/
+
+
 In this article, we introduce another paradigm called backtracking, which is also often implemented in the form of recursion.
 
 Backtracking is a general algorithm for finding all (or some) solutions to some computational problems (notably Constraint satisfaction problems or CSPs), which incrementally builds candidates to the solution and abandons a candidate ("backtracks") as soon as it determines that the candidate cannot lead to a valid solution. [1] 
