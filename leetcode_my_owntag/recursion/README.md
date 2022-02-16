@@ -1,3 +1,9 @@
+
+https://leetcode.com/explore/learn/card/recursion-i/
+
+https://leetcode.com/explore/learn/card/recursion-ii/
+
+
 # 分式简化
 
 有一个同学在学习分式。他需要将一个连分数化成最简分数，你能帮助他吗？
