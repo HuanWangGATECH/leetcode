@@ -66,3 +66,26 @@ class Solution:
 
         return (n,m)
 ```
+
+
+
+https://leetcode.com/problems/search-in-a-binary-search-tree/solution/
+
+
+```python
+class Solution:
+    def searchBST(self, root: TreeNode, val: int) -> TreeNode:
+        if root is None or val == root.val:
+            return root
+        
+        return self.searchBST(root.left, val) if val < root.val \
+            else self.searchBST(root.right, val)
+```
+
+```python
+class Solution:
+    def searchBST(self, root: TreeNode, val: int) -> TreeNode:
+        while root is not None and root.val != val:
+            root = root.left if val < root.val else root.right
+        return root
+```
