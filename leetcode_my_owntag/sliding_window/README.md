@@ -207,6 +207,10 @@ https://leetcode.com/playground/mauLVRJe
 # Permutation in a String (hard)
 
 '''
+
+https://leetcode.com/problems/permutation-in-string/
+
+
 Problem Challenge 1
 
 Permutation in a String (hard) 
@@ -262,6 +266,37 @@ Output: true
 Explanation: The string contains "acb" which is a permutation of the given pattern.
 
 '''
+
+```python
+
+        n1=len(s1)
+        n2=len(s2)
+        if n2< n1:
+            return False 
+        start=0
+        
+        end=0
+        
+        freq1=[0]*26
+        freq2=[0]*26
+        
+        for i in range(n1):
+            freq1[ord(s1[i])-ord('a')]+=1 
+   
+            
+        
+        while end< n2:      
+            freq2[ord(s2[end])-ord('a')]+=1  
+            while end-start==n1-1:
+                if freq1==freq2:
+                    return True
+                freq2[ord(s2[start])-ord('a')]-=1 
+                start+=1     
+            end+=1 
+          
+        
+        return False  
+```
 
 # Problem Challenge 2 - String Anagrams (hard) 
 
