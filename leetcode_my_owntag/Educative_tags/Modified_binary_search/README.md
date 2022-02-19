@@ -1,3 +1,5 @@
+# This link below is hugely helpful!
+
 https://leetcode.com/problems/binary-search/discuss/423162/Binary-Search-101
 
 Binary search is often a topic that's easy to be explained in the abstract level, but when it comes to write bug free implementations, it's rather difficult.
