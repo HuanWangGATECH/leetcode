@@ -1,4 +1,30 @@
+https://leetcode.com/problems/binary-search/discuss/423162/Binary-Search-101
+
+Binary search is often a topic that's easy to be explained in the abstract level, but when it comes to write bug free implementations, it's rather difficult.
+
+Some of the most common problems include:
+
+Infinity loop
+Can't decide where to shrink
+Do I use lo or hi
+When to exit the loop
+...
+In this article, I will be sharing my insights on how to write bug free binary search with just a little pattern.
+
+If you are familiar with binary search and just want to see the pattern, you can go directly to the part: The Pattern.
+
+What is binary search?
+Normally, to find the target in a group, such as an array of numbers, the worst case scenario is we need to go through every single element (O(n)). However, when these elements are sorted, we are able to take the privilege of this extra information to bring down the search time to O(log n), that is if we have 100 elements, the worst case scenario would be 10 searches. That is a huge performance improvement.
+
+The Gif below demonstrates the power of binary search.
+
+
+
+
 # Agnostic binary search (easy)
+
+
+
 
 '''
 Problem Statement 
@@ -112,3 +138,22 @@ Input: [10, 9, 8]
 
 Output: 10
 '''
+
+
+```python
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:
+        l=0
+        r=len(nums)-1
+ 
+        while l < r:
+            
+            m=(l+r)>>1
+            
+            if nums[m]>nums[m+1]:
+                r=m
+            else:
+                l=m+1
+        
+        return l 
+```
