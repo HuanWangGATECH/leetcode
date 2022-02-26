@@ -215,6 +215,7 @@ https://leetcode.com/playground/6Yq3zJF4
 '''
 
 
+https://leetcode.com/playground/UVytp3nV
 
 
 Problem Statement 
@@ -251,4 +252,34 @@ Output: 10
 '''
 
 
-https://leetcode.com/playground/UVytp3nV
+## If you analyze the binary search algorithm carefully, then you will find that at the end of the loop, the start and end indices point to the numbers that are closest to the target value being searched for. So essentially, at the end of the loop, the start index points to the ceiling of the target and the end index points to the floor of the target value.
+
+## So to find the minimum difference element, we will apply standard binary search and try to search for the target value in the given array. If we find the target, then we return it as the minimum difference element.
+
+
+
+```python
+def findMinimumDiff(arr,target):
+    
+    n=len(arr)
+    
+    l=0
+    r=n-1
+    
+    while l<=r:
+        m=l+r>>1
+        print (l,r,m)
+        if arr[m]>target:
+            r=m-1
+        if arr[m]<target:
+            l=m+1
+        if arr[m]==target:
+            return m 
+        
+    if abs(arr[l]-target)<abs(arr[r]-target):
+        return l
+    else:
+        return r
+    
+```
+
