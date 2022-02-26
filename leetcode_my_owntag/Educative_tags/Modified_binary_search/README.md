@@ -249,3 +249,6 @@ Input: [4, 6, 10], key = 17
 
 Output: 10
 '''
+
+
+https://leetcode.com/playground/UVytp3nV
