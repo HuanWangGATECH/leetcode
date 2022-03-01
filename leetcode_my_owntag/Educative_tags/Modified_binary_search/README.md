@@ -330,3 +330,70 @@ Output: 'a'
 
 Explanation: As the array is assumed to be circular, the smallest letter greater than 'h' is 'a'.
 '''
+
+
+https://leetcode.com/problems/find-smallest-letter-greater-than-target/submissions/
+
+
+```python
+
+
+class Solution:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+        
+        n=len(letters)
+        l=0
+        r=len(letters)
+
+        while l<r:
+            m=l+r>>1
+            
+            #print (l,r,m)
+            if ord(letters[m]) <= ord(target):
+                l=m+1
+            
+            else:
+                r=m
+
+        #print (l,r,m)
+        return letters[l%n] 
+        
+```
+
+
+# Number range (medium)
+
+'''
+Problem Statement 
+
+Given an array of numbers sorted in ascending order, find the range of a given number ‘key’. The range of the ‘key’ will be the first and last position of the ‘key’ in the array.
+
+Write a function to return the range of the ‘key’. If the ‘key’ is not present return [-1, -1].
+
+Example 1:
+
+Input: [4, 6, 6, 6, 9], key = 6
+
+Output: [1, 3]
+
+Example 2:
+
+Input: [1, 3, 8, 10, 15], key = 10
+
+Output: [3, 3]
+
+Example 3:
+
+Input: [1, 3, 8, 10, 15], key = 12
+
+Output: [-1, -1]
+'''
+
+
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+# about python bisect 
+https://docs.python.org/3/library/bisect.html
+
+
+
