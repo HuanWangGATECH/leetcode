@@ -20,6 +20,13 @@ Normally, to find the target in a group, such as an array of numbers, the worst 
 
 The Gif below demonstrates the power of binary search.
 
+# Also python libary's bisect is another clear way to implement binary search 
+
+# python bisect 
+https://docs.python.org/3/library/bisect.html
+
+# youtube video to build intuition of bisect of python 
+https://www.youtube.com/watch?v=tgVSkMA8joQ
 
 
 
@@ -391,9 +398,6 @@ Output: [-1, -1]
 
 
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-
-# about python bisect 
-https://docs.python.org/3/library/bisect.html
 
 
 
