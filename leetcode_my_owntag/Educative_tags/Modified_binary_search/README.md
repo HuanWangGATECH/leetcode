@@ -400,4 +400,46 @@ Output: [-1, -1]
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 
+```python
+import bisect 
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        
+        
+        #find the left index 
+        l=0
+        r=len(nums)
+        
+        while l<r:
+            m=l+r>>1
+            if nums[m]<target:
+                l=m+1
+            else:
+                r=m
+        if l>=len(nums) or nums[l]!=target:
+            return [-1,-1]
+        else:
+            left=l         
+        
+        
+        # find the right index 
+        
+        if len(nums)==0:
+            return [-1,-1]
+        l=0
+        r=len(nums)
+        while l<r:
+            m=l+r>>1
+            
+            if nums[m] >target:
+                r=m
+            else:
+                l=m+1
+        
+        right=l-1
+        
 
+        
+        
+        return [left,right]
+ ```
