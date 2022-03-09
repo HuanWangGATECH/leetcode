@@ -347,6 +347,9 @@ Output: "ab7c", "Ab7c", "aB7c", "AB7c", "ab7C", "Ab7C", "aB7C", "AB7C"
 '''
 
 
+https://leetcode.com/problems/letter-case-permutation/submissions/
+
+
 # BFS my approach 
 
 ```python
@@ -376,7 +379,7 @@ class Solution:
 # DFS my approach 
 
 
-```pyhon 
+```python 
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
         
