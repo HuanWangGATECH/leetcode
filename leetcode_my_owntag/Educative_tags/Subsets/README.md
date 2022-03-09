@@ -301,3 +301,25 @@ def find_permutations(nums):
 
   return result
  ```
+
+# my BFS solution 
+
+```python 
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        
+
+        queue=[]
+        queue.append([])
+        for num in nums: 
+            #print (num)
+            for _ in range(len(queue)):
+                current=queue.pop(0)
+                n=len(current)        
+                for i in range(n+1):
+                    temp=current.copy()
+                    temp.insert(i,num)
+                    queue.append(temp)
+                    
+        return queue 
+```
