@@ -371,3 +371,30 @@ class Solution:
           
         return res 
 ```
+
+
+# DFS my approach 
+
+
+```pyhon 
+class Solution:
+    def letterCasePermutation(self, s: str) -> List[str]:
+        
+        res=[]
+        
+        def dfs(path,i):
+            
+            if len(path)==len(s):
+                res.append(path)
+                return 
+            
+            if s[i].isalpha():
+                dfs(path+s[i].swapcase(),i+1)
+            
+            dfs(path+s[i],i+1)
+            
+        dfs('',0)
+        
+        
+        return res 
+```
