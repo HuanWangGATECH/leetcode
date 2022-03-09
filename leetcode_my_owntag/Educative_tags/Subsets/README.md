@@ -323,3 +323,51 @@ class Solution:
                     
         return queue 
 ```
+
+
+
+# String Permutations by changing case (medium)
+
+'''
+Problem Statement 
+
+Given a string, find all of its permutations preserving the character sequence but changing case.
+
+Example 1:
+
+Input: "ad52"
+
+Output: "ad52", "Ad52", "aD52", "AD52" 
+
+Example 2:
+
+Input: "ab7c"
+
+Output: "ab7c", "Ab7c", "aB7c", "AB7c", "ab7C", "Ab7C", "aB7C", "AB7C"
+'''
+
+
+# BFS my approach 
+
+```python
+class Solution:
+    def letterCasePermutation(self, s: str) -> List[str]:
+        
+        
+        res=[]
+        res.append('')
+        
+        for i in range(len(s)):
+            
+            letter=s[i]
+            for _  in  range(len(res)):
+                
+                temp=res.pop(0)
+                if letter.isalpha():
+ 
+                    res.append(temp+letter.swapcase())
+  
+                res.append(temp+letter)
+          
+        return res 
+```
