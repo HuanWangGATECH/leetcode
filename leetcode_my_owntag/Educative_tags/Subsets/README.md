@@ -477,3 +477,10 @@ class Solution:
                 
         return result
 ```      
+
+
+Let’s try to estimate how many combinations we can have for N pairs of balanced parentheses. If we don’t care for the ordering - that ) can only come after ( - then we have two options for every position, i.e., either put open parentheses or close parentheses. This means we can have a maximum of 2ᴺ combinations. Because of the ordering, the actual number will be less than 2ᴺ
+
+If you see the visual representation of Example-2 closely you will realize that, in the worst case, it is equivalent to a binary tree, where each node will have two children. This means that we will have 2ᴺ leaf nodes and 2ᴺ-1 intermediate nodes. So the total number of elements pushed to the queue will be 2ᴺ−1, which is asymptotically equivalent to O(2ᴺ). While processing each element, we do need to concatenate the current string with ( or ). This operation will take O(N), so the overall time complexity of our algorithm will be O(N*2ᴺ). This is not completely accurate but reasonable enough to be presented in the interview.
+
+All the additional space used by our algorithm is for the output list. Since we can’t have more than O(2ᴺ) combinations, the space complexity of our algorithm is O(N*2ᴺ).
