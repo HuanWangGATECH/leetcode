@@ -484,3 +484,42 @@ Let’s try to estimate how many combinations we can have for N pairs of balance
 If you see the visual representation of Example-2 closely you will realize that, in the worst case, it is equivalent to a binary tree, where each node will have two children. This means that we will have 2ᴺ leaf nodes and 2ᴺ-1 intermediate nodes. So the total number of elements pushed to the queue will be 2ᴺ−1, which is asymptotically equivalent to O(2ᴺ). While processing each element, we do need to concatenate the current string with ( or ). This operation will take O(N), so the overall time complexity of our algorithm will be O(N*2ᴺ). This is not completely accurate but reasonable enough to be presented in the interview.
 
 All the additional space used by our algorithm is for the output list. Since we can’t have more than O(2ᴺ) combinations, the space complexity of our algorithm is O(N*2ᴺ).
+
+
+
+
+# same approach but using DFS my solution 
+
+```python 
+from collections import deque
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        
+        result=[]
+        
+        
+        
+        def generateParenthesisRecursive(path,n_open,n_close):
+            
+            if len(path)==2*n:
+                result.append(path)
+                return 
+            
+            if n_open <n:
+                
+                generateParenthesisRecursive(path+'(',n_open+1,n_close)
+                
+            if n_close<n_open:
+                
+                generateParenthesisRecursive(path+')',n_open,n_close+1)
+            
+            
+            
+        generateParenthesisRecursive('',0,0)
+        
+        
+        return result
+        
+```
+
+
