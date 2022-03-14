@@ -1,6 +1,7 @@
 # Can jump series on leetcode 
 
 ## 1. can jump 1 
+https://leetcode.com/problems/jump-game/submissions/
 
 BFS 
 
@@ -38,5 +39,30 @@ class Solution:
                 
         return False 
 ```
+# DFS solution (backtracing) solution 
 
+```python 
+from collections import deque 
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        
+        
+        def dfs(current_index):
+            
+            if current_index>=len(nums)-1:
+                return True 
+            
+            furthest=min(current_index+nums[current_index],len(nums)-1)
+            for new_index in range(current_index+1,furthest+1):
+                
+                if dfs(new_index):
+                    return True 
+                
+            return False 
+                
+        
+        return dfs(0)
+  ```
+  
+  
 ## 2. can jump 2 
