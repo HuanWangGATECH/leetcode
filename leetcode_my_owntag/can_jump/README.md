@@ -39,7 +39,7 @@ class Solution:
                 
         return False 
 ```
-# DFS solution (backtracing) solution 
+# DFS solution (backtracking) solution 
 
 ```python 
 from collections import deque 
