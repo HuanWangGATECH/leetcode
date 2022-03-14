@@ -1,5 +1,18 @@
 # Can jump series on leetcode 
 
+
+# similar questions 
+
+https://leetcode.com/discuss/interview-question/1191163/Google-Phone-Screen/927967
+
+ https://leetcode.com/problems/video-stitching/
+ 
+
+https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+
+google phone interview streetlights
+
+
 ## 1. can jump 1 
 https://leetcode.com/problems/jump-game/submissions/
 
