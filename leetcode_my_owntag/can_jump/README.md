@@ -155,3 +155,35 @@ class Solution:
         
         return distance[n-1]
 ```
+
+
+
+# Dp solution 
+
+```python
+
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        
+    # Dp solution 
+    
+
+    
+        #dp[i] minimum number of jumps to reach n-1
+    
+        n=len(nums)
+        dp=[math.inf]*n
+    
+        dp[n-1]=0
+    
+        for i in range(n-2,-1,-1):
+            minJump=min(nums[i]+i,n-1)
+            for j in range(minJump,i,-1):
+                dp[i]=min(dp[i],dp[j]+1)
+                #print (i,j,dp)
+        #print (dp)
+        return dp[0]
+ ```
+ 
+ 
+ 
