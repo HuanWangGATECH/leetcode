@@ -78,4 +78,33 @@ class Solution:
   ```
   
   
+  # Dp solution 
+  ```python
+  
+  from collections import deque 
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        
+        #DP
+        n=len(nums)
+        
+        #dp[i] means if i can reach n-1 index 
+        dp=n*[False]
+        
+        dp[n-1]=True 
+        
+        
+        for i in range(n-2,-1,-1):
+            
+            minjump_index=min(n-1,nums[i]+i)
+            
+            for j in range(minjump_index,0,-1):
+                
+                if dp[j]:
+                    dp[i]=True 
+  
+            
+        return dp[0]
+      ```
+  
 ## 2. can jump 2 
