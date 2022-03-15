@@ -124,3 +124,34 @@ class Solution:
 }
 ```
 ## 2. can jump 2 
+
+
+https://leetcode.com/problems/jump-game-ii/
+
+# This is a nonweighed graph's shortest path problem BFS will solve this problem 
+
+# my BFS solution 
+
+```python
+from collections import deque 
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        
+        queue=deque()
+        
+        queue.append(0)
+        n=len(nums)
+        distance=[math.inf]*n
+        distance[0]=0
+        while queue:
+            
+            current_index=queue.popleft()
+            minjump=min(current_index+nums[current_index],n-1)
+            for next_index in range(current_index+1,minjump+1):
+                if distance[next_index]>distance[current_index]+1:
+                    distance[next_index]=distance[current_index]+1
+                    queue.append(next_index)
+                    
+        
+        return distance[n-1]
+```
