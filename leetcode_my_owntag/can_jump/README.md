@@ -187,3 +187,58 @@ class Solution:
  
  
  
+# 3 video stiching 
+
+https://leetcode.com/problems/video-stitching/
+
+
+# BFS graph sssp 
+
+```python
+from collections import deque 
+class Solution:
+    def videoStitching(self, clips: List[List[int]], time: int) -> int:
+        clips=sorted(clips)
+        
+        #graph BFS sssp 
+        #build graph 
+        #print (clips)
+        graph={}
+        
+        for i in range(len(clips)):
+            graph[i]=[]
+            
+      
+        for i in range(len(clips)):
+            
+            for j in range(i+1,len(clips)):
+                i_begin=clips[i][0]
+                i_end=clips[i][1]
+                
+                j_begin=clips[j][0]
+                j_end=clips[j][1]
+                if j_begin<=i_end and j_end>i_end:
+                    graph[i].append(j)
+
+        queue=deque()
+        if clips[0][0]>0:
+            return -1
+        if clips[-1][1]<time:
+            return -1
+        queue.append(0)
+        
+        dist=len(clips)*[math.inf]
+        dist[0]=1
+        while queue:
+            
+            curr_index=queue.popleft()
+            for nei in graph[curr_index]:
+                if dist[nei]>dist[curr_index]+1:
+                    dist[nei]=dist[curr_index]+1
+                    queue.append(nei)
+        
+        print (dist)
+        return dist[len(clips)-1]
+```
+
+
