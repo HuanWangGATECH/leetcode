@@ -90,3 +90,62 @@ class Solution:
             root = root.left if val < root.val else root.right
         return root
 ```
+
+
+# Example of recursion TLE (time limit exceeded)
+
+
+https://leetcode.com/problems/pascals-triangle-ii/
+
+# Top down recursive solution TLE 
+
+
+```python
+
+class Solution {
+  private int getNum(int row, int col) {
+    if (row == 0 || col == 0 || row == col) {
+      return 1;
+    }
+
+    return getNum(row - 1, col - 1) + getNum(row - 1, col);
+  }
+
+  public List<Integer> getRow(int rowIndex) {
+    List<Integer> ans = new ArrayList<>();
+
+    for (int i = 0; i <= rowIndex; i++) {
+      ans.add(getNum(rowIndex, i));
+    }
+
+    return ans;
+  }
+}
+```
+
+
+# Dp solution 
+
+```python
+class Solution:
+    def getRow(self, rowIndex: int) -> List[int]:
+        
+        
+        dp=[[0 for j in range(i+1)] for i in range(rowIndex+1)]
+        
+        for i in range(rowIndex+1):
+            dp[i][0]=1
+            dp[i][-1]=1
+         
+        
+        print (dp)
+            
+        for i in range(1,rowIndex+1):
+            for j in range(1,i):
+                
+                dp[i][j]=dp[i-1][j-1]+dp[i-1][j]
+                
+        
+        return dp[rowIndex]
+        
+```
