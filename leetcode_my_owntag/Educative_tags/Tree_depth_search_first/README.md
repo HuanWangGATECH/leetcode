@@ -93,7 +93,10 @@ print (allSumForPath(root,23))
 
 # in order traversal of tree 
 
-https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+https://leetcode.com/problems/binary-tree-inorder-traversal/solution/
+
+
+
 
 
 ## recursive approach 
