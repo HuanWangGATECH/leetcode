@@ -30,3 +30,5 @@ how to use try throw block
 
 how to throw user defined exceptions
 
+how to use object ErrorInfo to find exceptions 
+
