@@ -15,3 +15,18 @@ https://www.liaoxuefeng.com/wiki/896043488029600
 其它资料就别看了，一般看一遍能学到有限，如果没学会就在这上面的链接多看和尝试几遍，过遍数是最有效的方式。
 
 
+# Exceptions 
+
+https://www.tutorialspoint.com/java/java_exceptions.htm
+
+https://crunchify.com/better-understanding-on-checked-vs-unchecked-exceptions-how-to-handle-exception-better-way-in-java/
+
+
+checked exceptions vs unchecked exceptions 
+
+throws 
+
+how to use try throw block 
+
+how to throw user defined exceptions
+
