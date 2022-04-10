@@ -32,3 +32,11 @@ how to throw user defined exceptions
 
 how to use object ErrorInfo to find exceptions 
 
+# OOP in java 
+
+why OOP? 
+
+Object-oriented programming (OOP) is a programming paradigm that allows you to package together data states and functionality to modify those data states, while keeping the details hidden away (like with the lightbulb). As a result, code with OOP design is flexible, modular, and abstract. This makes it particularly useful when you create larger programs.
+
+
+
