@@ -39,10 +39,10 @@ class Solution:
         return dp[amount] if dp[amount]!=math.inf else -1
 ```
 
+### Greedy approach doesn't go well with this question. Take this example. coins = [100, 90, 1] amount = 385
+### The greedy answer will be [3 * 100, 1 * 85], so all together 88
+### But a better combination will be [2 * 100, 2 * 90, 5 * 1], so 9.. hope you got the idea
 
-==Greedy approach doesn't go well with this question. Take this example. coins = [100, 90, 1] amount = 385
-The greedy answer will be [3 * 100, 1 * 85], so all together 88
-But a better combination will be [2 * 100, 2 * 90, 5 * 1], so 9.. hope you got the idea==
 
 
 
@@ -93,3 +93,5 @@ class Solution:
             diff %= i # Diff becomes modulo of diff with i
         return count
 ```
+### This case would work for greedy because 
+### 
