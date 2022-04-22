@@ -40,9 +40,9 @@ class Solution:
 ```
 
 
-Greedy approach doesn't go well with this question. Take this example. coins = [100, 90, 1] amount = 385
+==Greedy approach doesn't go well with this question. Take this example. coins = [100, 90, 1] amount = 385
 The greedy answer will be [3 * 100, 1 * 85], so all together 88
-But a better combination will be [2 * 100, 2 * 90, 5 * 1], so 9.. hope you got the idea
+But a better combination will be [2 * 100, 2 * 90, 5 * 1], so 9.. hope you got the idea==
 
 
 
