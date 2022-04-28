@@ -50,3 +50,13 @@ https://github.com/spring-guides/gs-rest-service
 # JPA JDBC Hibernate 
 
 https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html#:~:text=JPA%20is%20a%20specification%20and,rather%20than%20with%20SQL%20statements.
+
+
+# Spring vs Guice 
+
+https://www.baeldung.com/guice-spring-dependency-injection
+
+# Spring Scope 
+
+https://www.baeldung.com/spring-bean-scopes
+
