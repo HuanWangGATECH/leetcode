@@ -46,3 +46,7 @@ Object-oriented programming (OOP) is a programming paradigm that allows you to p
 
 https://github.com/spring-guides/gs-rest-service
 
+
+# JPA JDBC Hibernate 
+
+https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html#:~:text=JPA%20is%20a%20specification%20and,rather%20than%20with%20SQL%20statements.
