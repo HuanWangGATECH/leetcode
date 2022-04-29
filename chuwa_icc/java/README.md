@@ -64,3 +64,10 @@ https://www.baeldung.com/spring-bean-scopes
 # JpaRepository vs CrudRepository 
 
 https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring
+
+
+# learn spring
+
+https://spring.io/guides
+
+https://www.baeldung.com/spring-boot
