@@ -71,3 +71,10 @@ https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepo
 https://spring.io/guides
 
 https://www.baeldung.com/spring-boot
+
+
+# exception handling 
+
+https://reflectoring.io/spring-boot-exception-handling/
+
+
