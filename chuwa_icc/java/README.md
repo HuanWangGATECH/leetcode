@@ -78,3 +78,18 @@ https://www.baeldung.com/spring-boot
 https://reflectoring.io/spring-boot-exception-handling/
 
 
+
+
+Multi-thread 
+
+difference between start() and run()
+
+how to create a new thread? callable runnable 
+
+what kind of lock do you know 
+
+what is thread pool?
+
+apart from runnable do you know callable ? what is the diff?
+
+what is future? what to do if blockage
