@@ -93,3 +93,116 @@ Multi-thread
 5. apart from runnable do you know callable ? what is the diff?
 
 6. what is future? what to do if blockage
+
+
+
+# leetcode challenges 
+
+Due date : 22:00 05/04/2022
+截图发到LeetCode channel。
+114
+145
+429
+
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+589
+590
+1302
+
+Due date : 22:00 05/06/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+101
+104
+110
+111
+
+Due date : 22:00 05/07/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+572
+965
+107
+
+Due date : 22:00 05/08/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+872
+113
+257
+
+Due date : 22:00 05/09/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+235
+
+Due date : 22:00 05/10/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+449
+
+Due date : 22:00 05/11/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+347
+692
+
+Due date : 22:00 05/12/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+543
+337
+
+Due date : 22:00 05/13/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+2
+445
+24
+206
+
+Due date : 22:00 05/14/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+141
+142
+23
+21
+
+Due date : 22:00 05/15/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+147
+148
+
+
+Due date : 22:00 05/16/2022
+做题截图发到LeetCode channel。
+如果你做过这个题，秒掉它。
+入股没做过这个题，做掉它。
+Anyway，无论你写过这道题没，都要写。xD。
+146
+707
