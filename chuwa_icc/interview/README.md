@@ -5,7 +5,12 @@
 [IC and IOC](#ic-and-ioc)
  
  
- 
+# Database 
+
+# Software life cycle 
+
+
+
 
 ## Singleton
 
