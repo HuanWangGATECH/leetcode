@@ -1,5 +1,5 @@
 # Spring 
- ## [IC/IOC](##ic/ioc)
+  1. [IC/IOC](##ic/ioc)
  
  
  772
@@ -20,36 +20,6 @@ and we can even link to it so:
 
 and we can even [link](#head1234) to it so:
 (On SO, the link doesn't work because the anchor is stripped.)
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
 ## IC/IOC 
 
