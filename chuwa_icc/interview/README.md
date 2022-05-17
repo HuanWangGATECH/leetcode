@@ -1,11 +1,15 @@
 # Design patterns 
 [Singleton](#singleton)
+
 [Other patterns]
 
 # Spring 
 [IC and IOC](#ic-and-ioc)
+
 [Scope]
+
 [Bean]
+
 [Annotations]
 
 
