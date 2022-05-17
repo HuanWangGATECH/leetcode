@@ -1,5 +1,5 @@
 # Spring 
-[IC/IOC](#ic/ioc)
+[IC and IOC](#ic-and-ioc)
  
  
  772
@@ -79,5 +79,5 @@ and we can even [link](#head1234) to it so:
 
 
  
-## IC/IOC
+## IC and IOC
 
