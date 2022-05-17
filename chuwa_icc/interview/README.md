@@ -36,6 +36,10 @@ The advantages of this architecture are:
 - greater modularity of a program
 - greater ease in testing a program by isolating a component or mocking its dependencies, and allowing components to communicate through contracts
 
+We can achieve Inversion of Control through various mechanisms such as: Strategy design pattern, Service Locator pattern, Factory pattern, and Dependency Injection (DI).
+
+
+
 ## Scope 
 ## Bean 
 ## Annotations 
