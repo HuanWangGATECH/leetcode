@@ -24,6 +24,75 @@
 
 
 ## Singleton
+### lazy loading thread safe 
+```java
+package pattern.singleton.demo5;
+/*
+double checked locking
+
+Despite this class being thread-safe, we can see that there's a clear performance drawback: each time we want to get the instance of our singleton, we need to acquire a potentially unnecessary lock.
+
+To fix that, we could instead start by verifying if we need to create the object in the first place and only in that case we would acquire the lock.
+ */
+public class Singleton {
+
+    private Singleton(){}
+
+    private static Singleton instance;
+
+    public static Singleton getInstance(){
+
+        //第一次判断，如果instance不为null，不进入抢锁阶段，直接返回实际
+        if (instance==null){
+            synchronized (Singleton.class){
+                //抢到锁之后再次判断是否为空
+                if (instance==null){
+                    instance=new Singleton();
+                }
+            }
+        }
+
+        return instance;
+    }
+}
+
+```
+
+To check 
+
+```java
+package pattern.singleton.demo5;
+
+
+import pattern.singleton.demo5.Singleton;
+
+public class Client {
+
+    public static void main(String[] args){
+
+        pattern.singleton.demo5.Singleton instance1= Singleton.getInstance();
+
+        pattern.singleton.demo5.Singleton instance2= Singleton.getInstance();
+
+        System.out.println(instance1==instance2);
+
+    }
+
+}
+```
+### how to break singleton 
+https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/
+
+### reflection  Reflection can be caused to destroy singleton property of singleton class, as shown in following example:
+Overcome reflection issue: To overcome issue raised by reflection, enums are used because java ensures internally that enum value is instantiated only once. Since java Enums are globally accessible, they can be used for singletons. Its only drawback is that it is not flexible i.e it does not allow lazy initialization.
+As enums don’t have any constructor so it is not possible for Reflection to utilize it. Enums have their by-default constructor, we can’t invoke them by ourself. JVM handles the creation and invocation of enum constructors internally. As enums don’t give their constructor definition to the program, it is not possible for us to access them by Reflection also. Hence, reflection can’t break singleton property in case of enums.
+
+### serialization:  Serialization can also cause breakage of singleton property of singleton classes. Serialization is used to convert an object of byte stream and save in a file or send over a network. Suppose you serialize an object of a singleton class. Then if you de-serialize that object it will create a new instance and hence break the singleton pattern.
+To overcome this issue, we have to implement method readResolve() method.
+
+
+### cloning: Cloning is a concept to create duplicate objects. Using clone we can create copy of object. Suppose, we create clone of a singleton object, then it will create a copy that is there are two instances of a singleton class, hence the class is no more singleton.
+To overcome this issue, override clone() method and throw an exception from clone method that is CloneNotSupportedException. Now whenever user will try to create clone of singleton object, it will throw exception and hence our class remains singleton.
 
 
 ## IOC and DI
