@@ -4,7 +4,7 @@
 [Other patterns]
 
 # Spring 
-[IC and IOC](#ic-and-ioc)
+[IOC and DI](#ioc-and-di)
 
 [Scope]
 
