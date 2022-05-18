@@ -128,6 +128,35 @@ https://dzone.com/articles/best-practices-for-dependency-injection-with-sprin
 
 ## Scope 
 
+https://www.baeldung.com/spring-bean-scopes
+
+The latest version of the Spring framework defines 6 types of scopes:
+
+-singleton
+-prototype
+-request
+-session
+-application
+-websocket
+
+The last four scopes mentioned, request, session, application and websocket, are only available in a web-aware application.
+
+### Singleton Scope
+
+When we define a bean with the singleton scope, the container creates a single instance of that bean; all requests for that bean name will return the same object, which is cached. Any modifications to the object will be reflected in all references to the bean. This scope is the default value if no other scope is specified.
+
+
+If a scope is set to singleton, the Spring IoC container creates exactly one instance of the object defined by that bean definition. This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object.
+The default scope is always singleton.
+
+### Prototype Scope 
+
+A bean with the prototype scope will return a different instance every time it is requested from the container. It is defined by setting the value prototype to the @Scope annotation in the bean definition:
+
+The prototype scope
+
+If the scope is set to prototype, the Spring IoC container creates a new bean instance of the object every time a request for that specific bean is made. As a rule, use the prototype scope for all state-full beans and the singleton scope for stateless beans.
+
 
 ## Bean 
 ## Annotations 
