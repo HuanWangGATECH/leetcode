@@ -159,6 +159,52 @@ If the scope is set to prototype, the Spring IoC container creates a new bean in
 
 
 ## Bean 
+
+
+https://www.tutorialspoint.com/spring/spring_bean_definition.htm
+
+
+
+
 ## Annotations 
+
+
+https://javatechonline.com/spring-boot-mvc-rest-annotations-with-examples/
+
+
+## How to handle logging ? Do you use local file or external file?
+
+https://www.baeldung.com/spring-boot-logging
+
+When using starters, Logback is used for logging by default.
+
+Spring Boot preconfigures it with patterns and ANSI colors to make the standard output more readable. 
+
+As we can see, the default logging level of the Logger is preset to INFO, meaning that TRACE and DEBUG messages are not visible.
+
+In order to activate them without changing the configuration, we can pass the –debug or –trace arguments on the command line:
+
+java -jar target/spring-boot-logging-0.0.1-SNAPSHOT.jar --trace
+
+ ####  Logback Configuration Logging
+Even though the default configuration is useful (for example, to get started in zero time during POCs or quick experiments), it's most likely not enough for our daily needs.
+
+Let's see how to include a Logback configuration with a different color and logging pattern, with separate specifications for console and file output, and with a decent rolling policy to avoid generating huge log files.
+
+First, we should find a solution that allows for handling our logging settings alone instead of polluting application.properties, which is commonly used for many other application settings.
+
+When a file in the classpath has one of the following names, Spring Boot will automatically load it over the default configuration:
+
+logback-spring.xml
+logback.xml
+logback-spring.groovy
+logback.groovy
+
+#### Log4j2 Configuration Logging
+
+
+
+
+
 
 
