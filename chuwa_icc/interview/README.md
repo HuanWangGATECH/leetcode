@@ -12,11 +12,24 @@
 
 [Annotations]
 
-
+[How to handle logging]
 # Java basic 
+[OOP]
+
+
+
+[SOLID]
+
+
+
 
  
 # Database 
+[ACID]
+
+
+[SQL vs NOSL]
+
 
 # Software life cycle 
 
