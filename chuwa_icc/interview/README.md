@@ -6,19 +6,81 @@
 # Spring 
 [IOC and DI](#ioc-and-di)
 
+
+
+
 [Scope]
 
-[Bean]
+[Bean] -How & when beans are created
+-Default Bean Scope and other types of bean scope
+- different between @Bean & @Service
+Bean life-cycle (@PostInit, @PreDestroy). When to use what life cycle method.
+
 
 [Annotations]
 
+
+what is @componentscan, what difference between @component and @configuration annotation
+
+what is @autowired
+
+
+
 [How to handle logging]
+how to implement logging. Do you use local file or external file?
+
+[How to write controller]
+
+
+
+
+[AOP]
+
+[CRUD in spring and database]
+
+
+# REST api
+
+[http error code]
+
+[http methods]
+
+Can you tell me what makes a service restful.
+
+Http request methods
+
+They asked me to create a RestController (can return any static data) and asked me how Spring handles the request
+- Then asked me to use a Service and call it from the controller
+
+
+
 # Java basic 
 [OOP]
 
 
-
 [SOLID]
+
+https://www.baeldung.com/solid-principles
+
+https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
+
+
+
+[Garbage collection]
+
+https://www.geeksforgeeks.org/garbage-collection-java/
+
+[Java 8 new features]
+
+Stream api vs Java 7 collection differences
+
+[Java memory]
+
+https://www.geeksforgeeks.org/java-memory-management/
+
+
+
+[Thread]
 
 
 
