@@ -14,7 +14,67 @@ https://leetcode.com/tag/backtracking/
 -  Should child and parent partial solution share same variables 
  Option 1: each child is created from a separate copy
  Option 2: parent transform in-place into its children 
- 
+
+
+
+
+# Every time copy solution of 17. Letter Combinations of a Phone Number
+```python 
+
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if digits=="":
+            return []
+        picked=""
+        
+        dict={"2":['a','b','c'],"3":['d','e','f'],"4":['g','h','i'],"5":['j','k','l'],"6":['m','n','o'],'7':['p','q','r','s'],'8':['t','u','v'],'9':['w','x','y','z']}
+        result=[]
+        
+        self.backtrack(0,dict,picked,digits,result)
+        
+        return result
+        
+    def backtrack(self,i,dict,picked,digits,result):
+            
+        print (id(picked))
+        if i==len(digits):
+            result.append(picked)
+                
+        else:
+            for ele in dict[digits[i]]: 
+                self.backtrack(i+1,dict,picked+ele,digits,result)
+```
+
+
+# In place solution of 17. Letter Combinations of a Phone Number
+```python
+class Solution:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if digits=="":
+            return []
+        picked=""
+        
+        dict={"2":['a','b','c'],"3":['d','e','f'],"4":['g','h','i'],"5":['j','k','l'],"6":['m','n','o'],'7':['p','q','r','s'],'8':['t','u','v'],'9':['w','x','y','z']}
+        result=[]
+        picked=[]
+        def backtrack(i):
+            
+            if i==len(digits):
+                #print (picked)
+                result.append("".join(picked)) 
+            else:   
+                for ele in dict[digits[i]]:
+                    picked.append(ele)
+                    backtrack(i+1)
+                    picked.pop()
+        
+        backtrack(0)
+        
+        return result 
+```
+
+## My two cents for this problem. Since we need to return a string as a path for this problem. Since string is tricky to keep track if parent transform in-place into its children. So here I still use array to keep track of picked/visted element ,but once it reached the leaf(target), I append leaf to result using "".join(path) function to make this array into a string.
+
 
 
 In this article, we introduce another paradigm called backtracking, which is also often implemented in the form of recursion.
