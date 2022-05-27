@@ -7,6 +7,16 @@ list of questions in leetcode
 https://leetcode.com/tag/backtracking/
 
 
+# Things to watch for when defining backtrack functions 
+
+- partial solution representation 
+-  do I need extra representation for partial solution 
+-  Should child and parent partial solution share same variables 
+ Option 1: each child is created from a separate copy
+ Option 2: parent transform in-place into its children 
+ 
+
+
 In this article, we introduce another paradigm called backtracking, which is also often implemented in the form of recursion.
 
 Backtracking is a general algorithm for finding all (or some) solutions to some computational problems (notably Constraint satisfaction problems or CSPs), which incrementally builds candidates to the solution and abandons a candidate ("backtracks") as soon as it determines that the candidate cannot lead to a valid solution. [1] 
